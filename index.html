@@ -1,241 +1,258 @@
+<!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ragnarok Wizard Repository | RagnarLothbrok-Odin.github.io</title>
-    <meta property="og:title" content="Ragnarok Wizard Repository">
-    <meta property="og:locale" content="en_US">
-    <link rel="canonical" href="https://RagnarLothbrok-Odin.github.io/">
-    <meta property="og:url" content="https://RagnarLothbrok-Odin.github.io/">
-    <meta property="og:site_name" content="RagnarLothbrok-Odin.github.io">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <style>
-      a:visited, a:hover, a:active, a{
-      color:#e50000
-      }
-
-      body{
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ragnarok Wizard Repository | RagnarLothbrok-Odin.github.io</title>
+  <meta property="og:title" content="Ragnarok Wizard Repository">
+  <meta property="og:locale" content="en_US">
+  <link rel="canonical" href="https://RagnarLothbrok-Odin.github.io/">
+  <meta property="og:url" content="https://RagnarLothbrok-Odin.github.io/">
+  <meta property="og:site_name" content="RagnarLothbrok-Odin.github.io">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    body {
       background-color: #1F2528;
-      color:#FAFFFD;
-      padding:50px;
+      color: #FAFFFD;
+      padding: 50px;
       font-family: 'Open Sans', sans-serif;
-      }
+    }
 
-      #logo, ul{
-      padding:10px;
+    a:visited, a:hover, a:active, a {
+      color: #e50000;
+    }
+
+    #logo, ul {
+      padding: 10px;
       background-color: #FAFFFD;
-      }
+    }
 
-      ul{
+    ul {
       margin-top: 20px;
       list-style-type: square;
-      left: 100px;
-      }
+      padding-left: 40px;
+    }
 
-      .code-highlight{
+    .code-highlight {
       font-weight: 700;
-      color:#e50000;
-      }
+      color: #e50000;
+    }
 
-      section{
-      color:#1F2528;
-      }
+    section {
+      color: #1F2528;
+    }
 
-      .credits{
-      float:right;
-      }
+    .credits {
+      float: right;
+    }
 
-      #fork, fork:active, fork:hover, fork:visited{
-      float:right;
-      padding: 10px 20px 10px 20px;
+    #fork, #fork:active, #fork:hover, #fork:visited {
+      float: right;
+      padding: 10px 20px;
       background-color: #e50000;
       color: #FAFFFD;
       text-decoration: none;
-      }
+    }
 
-      h1{
+    h1 {
       display: inline-block;
-      }
+    }
 
-      small{
+    small {
       margin-top: 40px;
       margin-right: -160px;
       font-size: 1em;
-      float:right;
-      }
+      float: right;
+    }
 
-      .btn{
-        border: 1px solid #e50000;
-        border-radius: 0px;
-        background: #e50000;
-        padding: 10px 20px;
-        margin: 10px;
-        font-size: 14px;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: 0.8s;
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .btn1{
-        color: #fff;
-      }
+    .btn {
+      border: 1px solid #e50000;
+      border-radius: 0;
+      background: #e50000;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 14px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.8s;
+      position: relative;
+      overflow: hidden;
+    }
 
-      .btn1:hover{
-        color: #e50000;
-        background: #fff;
-      }
+    .btn1 {
+      color: #fff;
+    }
 
+    .btn1:hover {
+      color: #e50000;
+      background: #fff;
+    }
 
-      
-    </style>
-  </head>
-  <body>
-    <div id="header">
-      <nav>
-        <a id="fork" href="https://github.com/RagnarLothbrok-Odin">View On GitHub</a>
-      </nav>
+    #hiddenBox {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .build-preview {
+      float: left;
+      font-size: 14pt;
+      text-align: center;
+      width: 45%;
+      margin-right: 1%;
+      margin-bottom: 0.5em;
+    }
+    
+    .build-preview img {
+      width: 100%;
+    }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      padding-left: 40px;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <nav>
+      <a id="fork" href="https://github.com/RagnarLothbrok-Odin">View On GitHub</a>
+    </nav>
+  </div>
+  <!-- end header -->
+  <div class="wrapper">
+    <div id="title">
+      <hr>
+      <h1 id="ragnarok-wizard-repository">Installing the Ragnarok Wizard</h1>
+      <small>Current Repository Version: 2.4</small>
     </div>
-    <!-- end header -->
-    <div class="wrapper">
-      <div id="title">
-        <hr>
-        <h1 id="ragnarok-wizard-repository">Installing the Ragnarok Wizard</h1>
-        <small>Current Repository Version: 2.4</small>
-      </div>
-      <section>
-        <p align="left"></p>
-        <p><img id="logo" align="left" src="https://raw.githubusercontent.com/RagnarLothbrok-Odin/plugin.program.ragnarok/master/icon.png" width="256" hspace="80" title="Ragnarok Repository"></p>
-        <p align="left">
-        </p>
-        <p>Instructions for adding this repo:</p>
-        <ul>
-          <li>Go to the Kodi file manager</li>
-          <li>Click on "Add source"</li>
-          <li>The path for the source is <code class="code-highlight"><a href="https://RagnarLothbrok-Odin.github.io">https://RagnarLothbrok-Odin.github.io</a></code></li>
-          <li>Name it "Ragnar" without the quotes</li>
-          <li>Go to "Add-ons"</li>
-          <li>Select "Install from zip file".</li>
-          <li>When it asks for the location, select "Ragnar".</li>
-          <li>For Ragnarok Wizard, install <code class="code-highlight"><a href="repository.ragnarokwizard-2.4.zip">repository.ragnarokwizard-2.4.zip</a></code></li>
-          <li>Go back to "Add-ons" and select "Install from repository"</li>
-          <li>Select "RagnarokWizard Repository"</li>
-          <li>Select "Program add-ons" and install "Ragnarok Wizard"</li>
+    <section>
+      <p><img id="logo" align="left" src="https://raw.githubusercontent.com/RagnarLothbrok-Odin/plugin.program.ragnarok/master/icon.png" width="256" hspace="80" title="Ragnarok Repository"></p>
+      <p>Instructions for adding this repo:</p>
+      <ul>
+        <li>Go to the Kodi file manager</li>
+        <li>Click on "Add source"</li>
+        <li>The path for the source is <code class="code-highlight"><a href="https://RagnarLothbrok-Odin.github.io">https://RagnarLothbrok-Odin.github.io</a></code></li>
+        <li>Name it "Ragnar" without the quotes</li>
+        <li>Go to "Add-ons"</li>
+        <li>Select "Install from zip file".</li>
+        <li>When it asks for the location, select "Ragnar".</li>
+        <li>For Ragnarok Wizard, install <code class="code-highlight"><a href="repository.ragnarokwizard-2.4.zip">repository.ragnarokwizard-2.4.zip</a></code></li>
+        <li>Go back to "Add-ons" and select "Install from repository"</li>
+        <li>Select "RagnarokWizard Repository"</li>
+        <li>Select "Program add-ons" and install "Ragnarok Wizard"</li>
+        <center>
+          <button class="btn btn1" onclick="toggleHiddenText()">Detailed Instructions</button>
+        </center>
+        <div id="hiddenBox">
           <center>
-            <button class="btn btn1" onclick="hiddenText()">Detailed Instructions</button>
+            <center>
+              <p><b>Media Source:</b> <code class="code-highlight"><a href="https://RagnarLothbrok-Odin.github.io">https://RagnarLothbrok-Odin.github.io</a></code>
+              <br><b>Premiumize:</b> <code class="code-highlight"><a href="https://www.premiumize.me">https://www.premiumize.me</a></code>
+              <br><b>Real-Debrid:</b> <code class="code-highlight"><a href="http://real-debrid.com/?id=961581">http://real-debrid.com</a></code>
+              <br><b>Kodi:</b> <code class="code-highlight"><a href="https://kodi.tv/download">https://kodi.tv/download</a></code>
+              <br><b>Support Server:</b> <code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">https://discord.gg/Q3ZhdRJ</a></code></p>
+
+              <p>What is Kodi? On its own, it is just a media player however, there are add-ons available that allow you to watch TV and Films for free. My builds include said addons.</p>
+
+              <p><b>Build List:</b>
+              <br><b>Ragnarok:</b> Contains premium sources only! (Uses the skin Arctic Horizon 2)
+              <br><b>Bifrost:</b> Contains premium sources only! (Using the skin Arctic Fuse) this build differs from Ragnarok as it uses TMDb for any fetched content, but plays using Seren.
+
+              <p><b>NOTE: </b>A premium subscription for scraping is required for both of my builds. The following are the two top options. A VPN is generally not needed when using one of these services. Although it can't hurt to use one too.</p>
+
+              <p>Real-Debrid functions perfectly fine, I use this due to the price at roughly $37.91 per year
+              <br>Premiumize is the best, but most expensive at roughly $82.93 per year</p>
+
+              <p>Feel free to add me on Discord, for any support you need.
+              <br>Ragnar Lothbrok#1948
+              <br>Alternatively, you can join the support server: <code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">https://discord.gg/Q3ZhdRJ</a></code></p></p>
+
+              <br>
+
           </center>
-            <div id="hiddenBox" style="display: none">
-              <center>
-                <p><b>Media Source:</b> <code class="code-highlight"><a href="https://RagnarLothbrok-Odin.github.io">https://RagnarLothbrok-Odin.github.io</a></code>
-                <br><b>Premiumize:</b> <code class="code-highlight"><a href="https://www.premiumize.me">https://www.premiumize.me</a></code>
-                <br><b>Real-Debrid:</b> <code class="code-highlight"><a href="http://real-debrid.com/?id=961581">http://real-debrid.com</a></code>
-                <br><b>Kodi:</b> <code class="code-highlight"><a href="https://kodi.tv/download">https://kodi.tv/download</a></code>
-                <br><b>Support Server:</b> <code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">https://discord.gg/Q3ZhdRJ</a></code></p>
+              <p><b>INSTRUCTIONS:</b></p>
 
-                <p>What is Kodi? On its own, it is just a media player however, there are add-ons available that allow you to watch TV and Films for free. My builds include said addons.</p>
+              <ol>
+              <li>Download/Install Kodi (Currently my builds only supports v19.x) <code class="code-highlight"><a href="https://kodi.tv/download">https://kodi.tv/download</a></code></li></li>
+              <li>Install and open Kodi</li>
+              <li>Add 'Media Source' to the file manager (Settings -> File Manager)</li>
+              <li>Select 'Add source' and type in <code class="code-highlight"><a href="https://RagnarLothbrok-Odin.github.io">https://RagnarLothbrok-Odin.github.io</a></code></li>
+              <li>Name it 'Ragnar'</li>
+              <li>Press back and click 'Add-ons'</li>
+              <li>Select Install from zip file</li>
+              <li>If you are asked to enable 'unknown sources', do as instructed</li>
+              <li>Select 'Install from zip file'</li>
+              <li>Select what you named the media source (Ragnar)</li>
+              <li>Select 'repository.ragnarokwizard-x.x.zip'</li>
+              <li>After it has installed, select 'Install from repository'</li>
+              <li>Select 'RagnarokWizard Repository' then 'Program add-ons'</li>
+              <li>Select 'Ragnarok Wizard' then 'Install'</li>
+              <li>After it has installed, a dialogue should pop up, I recommend keeping everything on default, so click 'Continue'</li>
+              <li>Another dialogue will now show, select 'Build Menu' to see the available builds</li>
+              <li>You will now see the build menu, after you have chosen a build, simply select it and then select 'Fresh Install' and then 'Continue'</li>
+              <li>The build will now install, once it has finished, Kodi should automatically close, depending on the OS you are using</li>
+              <li>Simply reopen Kodi, and your build will be installed!</li>
+              </ol>
 
-                <p><b>Build List:</b>
-                <br><b>Ragnarok:</b> Contains premium sources only! (Uses the new Arctic Horizon 2 skin, this build differs from Serenity as it uses TMDb for any fetched content, but plays using Seren.)
-                <br><b>Serenity:</b> Contains premium sources only! (Using the skin Blue Twilight)
+              <p>The first boot may take a few minutes for the widgets to populate, this is normal.
+                <br>Your build should now look like one of the following images, if it does not, follow the troubleshooting steps further down this post.</p>
 
-                <p><b>NOTE: </b>A premium subscription for scraping is required for both of my builds. The following are the two top options. A VPN is generally not needed when using one of these services. Although it can't hurt to use one too.</p>
+              <p style="float: left; font-size: 14pt; text-align: center; width: 45%; margin-right: 1%; margin-bottom: 0.5em;"><img src="https://raw.githubusercontent.com/RagnarLothbrok-Odin/Wizard/master/Build%20Preview/Ragnarok.png" style="width: 100%">Ragnarok Build</p>
+              <p style="float: left; font-size: 14pt; text-align: center; width: 45%; margin-right: 1%; margin-bottom: 0.5em;"><img src="https://raw.githubusercontent.com/RagnarLothbrok-Odin/Wizard/master/Build%20Preview/Bifrost.png" style="width: 100%">Bifrost Build</p>
+              <p style="clear: both;">
+              <br>
+              
+              <p><b>Activating your premium subscription:</b>
+              <br>I will now talk you through on adding your purchased subscription, either Real-Debrid, or Premiumize.</br></p>
+              <ol>
+                <li>Open settings</li>
+                <li>Click 'Add-ons</li>
+                <li>Click 'My Add-ons</li>
+                <li>Click 'Video add-ons'</li>
+                <li>Click 'Seren'</li>
+                <li>Click 'Configure'</li>
+                <li>Scroll down to 'Accounts' in the left list of options</li>
+                <li>Now go to the right pane (you can do this by pressing right on your keyboard or remote device.</li>
+                <li>Scroll down to 'Enable Premiumize' or 'Enable Real-Debrid' depending on which service you purchased and select that option</li>
+                <li>Click 'Authorize Premiumize' or 'Authorize Real-Debrid' depending on which service you pruchased.</li>
+                <li>You should now be instructed to go to a web-page and insert a code. After doing so, the dialog should automatically disable. Your account is now added and you can return to the home screen and begin watching content!</li>
+              </ol>
 
-                <p>Real-Debrid functions perfectly fine, I use this due to the price at roughly $37.91 per year
-                <br>Premiumize is the best, but most expensive at roughly $82.93 per year</p>
+              <p><b>Troubleshooting:</b>
+              <br>If for some reason, after restarting Kodi post-install, it does not look like one of the attached images, you may need to manually apply the GUI settings file. However, the included wizard makes this job very easy! Instructions are:</br></p>
+              <ol>
+                <li>Open the settings</li>
+                <li>Click 'Add-ons</li>
+                <li>Click 'My Add-ons</li>
+                <li>Click 'Program add-ons'</li>
+                <li>Click 'Ragnarok Wizard'</li>
+                <li>Click 'Open'</li>
+                <li>Click 'Builds'</li>
+                <li>Select the build you installed in the previous step.</li>
+                <li>Click 'Apply guiFix'</li>
+                <li>Click 'Apply Fix'</li>
+                <li>After it has installed, it should force close Kodi, if it does not, it should instruct you to do so, during the next boot the build should be working!</li>
+              </ol>
+              
+              <p><code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">If for any reason, you are still having issues, I suggest joining the support server by clicking this hyperlink.</a></code></p>
 
-                <p>Feel free to add me on Discord, for any support you need.
-                <br>Ragnar Lothbrok#1948
-                <br>Alternatively, you can join the support server: <code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">https://discord.gg/Q3ZhdRJ</a></code></p></p>
-
-                <br>
-
-            </center>
-                <p><b>INSTRUCTIONS:</b></p>
-
-                <ol>
-                <li>Download/Install Kodi (Currently my builds only supports v19.x) <code class="code-highlight"><a href="https://kodi.tv/download">https://kodi.tv/download</a></code></li></li>
-                <li>Install and open Kodi</li>
-                <li>Add 'Media Source' to the file manager (Settings -> File Manager)</li>
-                <li>Select 'Add source' and type in <code class="code-highlight"><a href="https://RagnarLothbrok-Odin.github.io">https://RagnarLothbrok-Odin.github.io</a></code></li>
-                <li>Name it 'Ragnar'</li>
-                <li>Press back and click 'Add-ons'</li>
-                <li>Select Install from zip file</li>
-                <li>If you are asked to enable 'unknown sources', do as instructed</li>
-                <li>Select 'Install from zip file'</li>
-                <li>Select what you named the media source (Ragnar)</li>
-                <li>Select 'repository.ragnarokwizard-x.x.zip'</li>
-                <li>After it has installed, select 'Install from repository'</li>
-                <li>Select 'RagnarokWizard Repository' then 'Program add-ons'</li>
-                <li>Select 'Ragnarok Wizard' then 'Install'</li>
-                <li>After it has installed, a dialogue should pop up, I recommend keeping everything on default, so click 'Continue'</li>
-                <li>Another dialogue will now show, select 'Build Menu' to see the available builds</li>
-                <li>You will now see the build menu, after you have chosen a build, simply select it and then select 'Fresh Install' and then 'Continue'</li>
-                <li>The build will now install, once it has finished, Kodi should automatically close, depending on the OS you are using</li>
-                <li>Simply reopen Kodi, and your build will be installed!</li>
-                </ol>
-
-                <p>The first boot may take a few minutes for the widgets to populate, this is normal.
-                  <br>Your build should now look like one of the following images, if it does not, follow the troubleshooting steps further down this post.</p>
-
-                <p style="float: left; font-size: 14pt; text-align: center; width: 45%; margin-right: 1%; margin-bottom: 0.5em;"><img src="https://raw.githubusercontent.com/RagnarLothbrok-Odin/Wizard/master/Build%20Preview/Ragnarok.png" style="width: 100%">Ragnarok Build</p>
-                <p style="float: left; font-size: 14pt; text-align: center; width: 45%; margin-right: 1%; margin-bottom: 0.5em;"><img src="https://raw.githubusercontent.com/RagnarLothbrok-Odin/Wizard/master/Build%20Preview/Serenity.png" style="width: 100%">Serenity Build</p>
-                <p style="clear: both;">
-                <br>
+              <p><b>WARNING:</b> Force close does not work on all OS. If it fails it should tell you. You MUST force close after otherwise, it won't extract the build. Google how to force close an app on your device if you struggle.
+                <br>Feel free to add me on Discord, for any support you need. : Ragnar Lothbrok#1948</p>
                 
-                <p><b>Activating your premium subscription:</b>
-                <br>I will now talk you through on adding your purchased subscription, either Real-Debrid, or Premiumize.</br></p>
-                <ol>
-                  <li>Open settings</li>
-                  <li>Click 'Add-ons</li>
-                  <li>Click 'My Add-ons</li>
-                  <li>Click 'Video add-ons'</li>
-                  <li>Click 'Seren'</li>
-                  <li>Click 'Configure'</li>
-                  <li>Scroll down to 'Accounts' in the left list of options</li>
-                  <li>Now go to the right pane (you can do this by pressing right on your keyboard or remote device.</li>
-                  <li>Scroll down to 'Enable Premiumize' or 'Enable Real-Debrid' depending on which service you purchased and select that option</li>
-                  <li>Click 'Authorize Premiumize' or 'Authorize Real-Debrid' depending on which service you pruchased.</li>
-                  <li>You should now be instructed to go to a web-page and insert a code. After doing so, the dialog should automatically disable. Your account is now added and you can return to the home screen and begin watching content!</li>
-                </ol>
-
-                <p><b>Troubleshooting:</b>
-                <br>If for some reason, after restarting Kodi post-install, it does not look like one of the attached images, you may need to manually apply the GUI settings file. However, the included wizard makes this job very easy! Instructions are:</br></p>
-                <ol>
-                  <li>Open the settings</li>
-                  <li>Click 'Add-ons</li>
-                  <li>Click 'My Add-ons</li>
-                  <li>Click 'Program add-ons'</li>
-                  <li>Click 'Ragnarok Wizard'</li>
-                  <li>Click 'Open'</li>
-                  <li>Click 'Builds'</li>
-                  <li>Select the build you installed in the previous step.</li>
-                  <li>Click 'Apply guiFix'</li>
-                  <li>Click 'Apply Fix'</li>
-                  <li>After it has installed, it should force close Kodi, if it does not, it should instruct you to do so, during the next boot the build should be working!</li>
-                </ol>
-                
-                <p><code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">If for any reason, you are still having issues, I suggest joining the support server by clicking this hyperlink.</a></code></p>
-
-                <p><b>WARNING:</b> Force close does not work on all OS. If it fails it should tell you. You MUST force close after otherwise, it won't extract the build. Google how to force close an app on your device if you struggle.
-                  <br>Feel free to add me on Discord, for any support you need. : Ragnar Lothbrok#1948</p>
-                  
-                  <p><b>NOTE:</b> If you have either Premiumize or Real-Debrid and are unsure on how to apply it to the build, message me on Discord: (Ragnar Lothbrok#1948) or join my support server: <code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">https://discord.gg/Q3ZhdRJ</a></code> and I will help you.</p>
-            </div>
-        </ul>
-        <p></p>
-      </section>
-    </div>
-    <script>
-      function hiddenText() {
-        var x = document.getElementById("hiddenBox");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
-  </body>
+                <p><b>NOTE:</b> If you have either Premiumize or Real-Debrid and are unsure on how to apply it to the build, message me on Discord: (Ragnar Lothbrok#1948) or join my support server: <code class="code-highlight"><a href="https://discord.gg/Q3ZhdRJ">https://discord.gg/Q3ZhdRJ</a></code> and I will help you.</p>
+          </center>
+        </div>
+      </ul>
+    </section>
+  </div>
+  <script>
+    function toggleHiddenText() {
+      var x = document.getElementById("hiddenBox");
+      x.style.display = x.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
 </html>
